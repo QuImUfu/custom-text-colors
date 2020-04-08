@@ -8,6 +8,8 @@ import me.sargunvohra.mcmods.autoconfig1u.annotation.ConfigEntry;
 class CustomTextColorsConfig implements ConfigData {
 
 
+    boolean pulsatingRandom = false;
+    int pulseSpeedMs = 500;
     boolean randomMissingColors = false;
     boolean eyesoreRandom = false;
 }
