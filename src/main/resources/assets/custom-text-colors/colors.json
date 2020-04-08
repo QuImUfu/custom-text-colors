@@ -1,0 +1,562 @@
+{
+  "group.textColor.guiMenu.fields": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "group.textColor.OptimizeWorldScreen": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "group.textColor.InGame.tintedBackground.fields": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "group.textColor.guiMenu.headings": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.guiMenu.messages": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.inGame.tintedBackground.headings": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.inGame.tintedBackground.messages": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.inGameOrMenu.headings": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.ingame.guiWindow.inventory.heading": {
+    "red": 64,
+    "green": 64,
+    "blue": 64
+  },
+  "group.textColor.ingame.guiWindow.default": {
+    "red": 64,
+    "green": 64,
+    "blue": 64
+  },
+  "group.textColor.menu.list.tinted.entry.title": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.menu.list.tinted.entry.description": {
+    "red": 128,
+    "green": 128,
+    "blue": 128
+  },
+  "group.textColor.inGame.default.chat": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.inGame.stats.downloading.messages": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.textColor.inGame.book.default": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "group.textColor.inGame.sign.default": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "group.textColor.guiMenu.checkBox": {
+    "red": 224,
+    "green": 224,
+    "blue": 224
+  },
+  "group.textColor.demoScreen.dark": {
+    "red": 31,
+    "green": 31,
+    "blue": 31
+  },
+  "group.textColor.guiMenu.server.tinted.darkGrey":{
+    "red": 85,
+    "green": 85,
+    "blue": 85
+  },
+  "group.textColor.debugScreen":{
+    "red": 224,
+    "green": 224,
+    "blue": 224
+  },
+  "group.textColor.tooltip.white": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.rarity.white": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "group.rarity.yellow": {
+    "red": 255,
+    "green": 255,
+    "blue": 85
+  },
+  "group.rarity.aqua": {
+    "red": 85,
+    "green": 255,
+    "blue": 255
+  },
+  "group.rarity.light_purple": {
+    "red": 255,
+    "green": 85,
+    "blue": 255
+  },
+  "Tooltip.textColor.generic.black": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "Tooltip.textColor.generic.dark_blue": {
+    "red": 0,
+    "green": 0,
+    "blue": 170
+  },
+  "Tooltip.textColor.generic.dark_green": {
+    "red": 0,
+    "green": 170,
+    "blue": 0
+  },
+  "Tooltip.textColor.generic.dark_aqua": {
+    "red": 0,
+    "green": 170,
+    "blue": 170
+  },
+  "Tooltip.textColor.generic.dark_red": {
+    "red": 170,
+    "green": 0,
+    "blue": 0
+  },
+  "Tooltip.textColor.generic.dark_purple": {
+    "red": 170,
+    "green": 0,
+    "blue": 170
+  },
+  "Tooltip.textColor.generic.gold": {
+    "red": 255,
+    "green": 170,
+    "blue": 0
+  },
+  "Tooltip.textColor.generic.gray": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "Tooltip.textColor.generic.dark_gray": {
+    "red": 85,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.generic.blue": {
+    "red": 85,
+    "green": 85,
+    "blue": 255
+  },
+  "Tooltip.textColor.generic.green": {
+    "red": 85,
+    "green": 255,
+    "blue": 85
+  },
+  "Tooltip.textColor.generic.aqua": {
+    "red": 85,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.generic.red": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.generic.light_purple": {
+    "red": 255,
+    "green": 85,
+    "blue": 255
+  },
+  "Tooltip.textColor.generic.yellow": {
+    "red": 255,
+    "green": 255,
+    "blue": 85
+  },
+  "TutorialToast.textColor.title": {
+    "red": 80,
+    "green": 0,
+    "blue": 80
+  },
+  "TutorialToast.textColor.notice": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "SystemToast.textColor.title": {
+    "red": 255,
+    "green": 255,
+    "blue": 0
+  },
+  "SystemToast.textColor.notice": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "RecipeToast.textColor.title": {
+    "red": 80,
+    "green": 0,
+    "blue": 80
+  },
+  "RecipeToast.textColor.notice": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "AdvancementToast.textColor.normalNotice": {
+    "red": 255,
+    "green": 255,
+    "blue": 0
+  },
+  "AdvancementToast.textColor.challengeNotice": {
+    "red": 255,
+    "green": 136,
+    "blue": 255
+  },
+  "AdvancementToast.textColor.title": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AbstractButtonWidget.textColor.textField": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AbstractButtonWidget.textColor.active": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AbstractButtonWidget.textColor.activeSlider": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AbstractButtonWidget.textColor.inactive": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "TitleScreen.textColor.splash": {
+    "red": 255,
+    "green": 255,
+    "blue": 0
+  },
+  "TitleScreen.textColor.notice": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "ResourcePackOptionsScreen.textColor.folder": {
+    "red": 128,
+    "green": 128,
+    "blue": 128
+  },
+  "LanguageOptionsScreen.textColor.warning": {
+    "red": 128,
+    "green": 128,
+    "blue": 128
+  },
+  "RecipeBookResults.textColor.page": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AnvilScreen.textColor.positive": {
+    "red": 128,
+    "green": 255,
+    "blue": 32
+  },
+  "AnvilScreen.textColor.negative": {
+    "red": 255,
+    "green": 96,
+    "blue": 96
+  },
+  "PlayerListHud.textColor.player": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "InGameHud.textColor.exp": {
+    "red": 128,
+    "green": 255,
+    "blue": 32
+  },
+  "InGameHud.textColor.expShadow": {
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "PlayerListHud.textColor.spectator": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "SpectatorHud.textColor.iconHotkey": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "MapRenderer.textColor.label": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AdvancementsScreen.textColor.header": {
+    "red": 64,
+    "green": 64,
+    "blue": 64
+  },
+  "AdvancementWidget.textColor.title": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "AdvancementWidget.textColor.progress": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  //All vanilla advancements use text formatting codes and are therefor not affected by this.
+  "AdvancementWidget.textColor.description": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  //This is a error message displayed when the current advancement tab is null. (no advancements are unlocked)
+  //That error window has a black Background.
+  "AdvancementsScreen.textColor.missing": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "CommandSuggestor.textColor.selectedEntry": {
+    "red": 255,
+    "green": 255,
+    "blue": 0
+  },
+  "CommandSuggestor.textColor.entry": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "ConfirmChatLinkScreen.textColor.heading": {
+    "red": 255,
+    "green": 204,
+    "blue": 204
+  },
+  "BossBarHud.textColor": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "InGameHud.textColor.overlay": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "InGameHud.textColor.demo": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "DemoScreen.textColor.instructions": {
+    "red": 79,
+    "green": 79,
+    "blue": 79
+  },
+  "DisconnectedScreen.textColor.heading": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "AbstractInventoryScreen.textColor.effects.name": {
+    "red": 127,
+    "green": 127,
+    "blue": 127
+  },
+  "AbstractInventoryScreen.textColor.effects.time": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "BeaconScreen.textColor.fields": {
+    "red": 224,
+    "green": 224,
+    "blue": 224
+  },
+  "BookEditScreen.textColor.sign.lightCursor": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "EnchantingScreen.textColor.affordable.glyphsNotSelected": {
+    "red": 104,
+    "green": 94,
+    "blue": 74
+  },
+  "EnchantingScreen.textColor.affordable.glyphsSelected": {
+    "red": 255,
+    "green": 255,
+    "blue": 128
+  },
+  "EnchantingScreen.textColor.affordable.expLevel": {
+    "red": 128,
+    "green": 255,
+    "blue": 32
+  },
+  "EnchantingScreen.textColor.notAffordable.glyphs": {
+    "red": 52,
+    "green": 47,
+    "blue": 37
+  },
+  "EnchantingScreen.textColor.notAffordable.expLevel": {
+    "red": 64,
+    "green": 127,
+    "blue": 16
+  },
+  "ServerEntry.textColor.versionMismatch": {
+    "red": 170,
+    "green": 0,
+    "blue": 0
+  },
+  "ServerEntry.textColor.playerCounts": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  //this is only used for records
+  "InGameHud.textColor.ChangingColor": {
+    //this is the syntax for hsv, like originally in game
+    //the minecraft colorspace conversion is bugged.
+    //My advice: don't use hsv
+    /*"colorType": "hsv","colors": [
+      {"hue": 1.2,"saturation": 0.7,"value": 0.6
+      },
+      {"hue": 0.0,"saturation": 0.7,"value": 0.6
+      }
+    ]
+    //this is the syntax for rgb, this should be ~ the same as the other one,
+    //but due to a minecraft colorspace conversion bug it is not.
+    //I think it doesn't even look good, use something else
+    "colorType": "rgb","colors": [
+      {"red": 132,"green": 153,"blue": 46
+      },
+      {"red": 153,"green": 46,"blue": 46
+      },
+      {"red": 153,"green": 46,"blue": 46
+      },
+      {"red": 153,"green": 153,"blue": 46
+      },
+      {"red": 46,"green": 153,"blue": 46
+      },
+      {"red": 46,"green": 153,"blue": 153
+      },
+      {"red": 46,"green": 46,"blue": 153
+      },
+      {"red": 153,"green": 46,"blue": 153
+      },
+      {"red": 153,"green": 46,"blue": 46
+      }
+    ]*/
+    //My recommendation:
+    "colorType": "rgb",
+    "colors": [
+      {
+        "red": 31,
+        "green": 31,
+        "blue": 255
+      },
+      {
+        "red": 255,
+        "green": 31,
+        "blue": 255
+      },
+      {
+        "red": 255,
+        "green": 31,
+        "blue": 31
+      },
+      {
+        "red": 255,
+        "green": 255,
+        "blue": 31
+      },
+      {
+        "red": 31,
+        "green": 255,
+        "blue": 31
+      },
+      {
+        "red": 31,
+        "green": 255,
+        "blue": 255
+      },
+      {
+        "red": 31,
+        "green": 31,
+        "blue": 255
+      }
+    ]
+  },
+  // WARNING While this is *technically* a changing color, no other color except the first one will *ever* be used
+  // (if the health is low enough for that (<20 HP), hearts are painted instead (<44 HP))
+  // it is however possible i overlooked something so i kept this :D
+  "PlayerListHud.textColor.ChangingColor.health": {
+    "colorType": "rgb",
+    "colors": [
+      {
+        "red": 0,
+        "green": 255,
+        "blue": 0
+      },
+      {
+        "red": 255,
+        "green": 0,
+        "blue": 0
+      }
+    ]
+  },
+  "SubtitlesHud.textColor.ChangingColor.fadingOut": {
+    "colorType": "rgb",
+    "colors": [
+      {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      },
+      {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      }
+    ]
+  }
+}

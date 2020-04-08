@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "custom_text_colors",
+  "version": "${version}",
+  "name": "custom-text-colors",
+  "description": "Adds the possibility to set custom font colors the **proper** way.",
+  "authors": [
+    "QuImUfu"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/custom-text-colors/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [],
+    "client": [
+      "quimufu.custom_text_colors.CustomTextColors"
+    ],
+    "server": [],
+    "modmenu": [
+      "quimufu.custom_text_colors.CustomTextColorsModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "custom-text-colors.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric-resource-loader-v0": "*"
+  }
+}

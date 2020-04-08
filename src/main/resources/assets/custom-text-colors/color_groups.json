@@ -1,0 +1,214 @@
+{
+  "group.textColor.guiMenu.fields": [
+    "EditWorldScreen.textColor.field",
+    "CreateWorldScreen.textColor.fields",
+    "PresetsScreen.textColor.share",
+    "PresetsScreen.textColor.list",
+    "AddServerScreen.textColor.fields",
+    "CustomizeBuffetLevelScreen.textColor.fields",
+    "DirectConnectScreen.textColor.field"
+  ],
+  "group.textColor.OptimizeWorldScreen": [
+    "OptimizeWorldScreen.textColor.progressPercent",
+    "OptimizeWorldScreen.textColor.progress",
+    "OptimizeWorldScreen.textColor.counts",
+    "OptimizeWorldScreen.textColor.status"
+  ],
+  "group.textColor.inGame.tintedBackground.fields": [
+    "JigsawBlockScreen.textColor.fields",
+    "StructureBlockScreen.textColor.fields",
+    "AbstractCommandBlockScreen.textColor.fields"
+  ],
+  "group.textColor.guiMenu.headings": [
+    "SelectWorldScreen.textColor.heading",
+    "OptimizeWorldScreen.textColor.heading",
+    "EditWorldScreen.textColor.heading",
+    "CreateWorldScreen.textColor.heading",
+    "VideoOptionsScreen.textColor.heading",
+    "StatsScreen.textColor.heading",
+    "SaveLevelScreen.textColor.heading",
+    "ResourcePackOptionsScreen.textColor.heading",
+    "ProgressScreen.textColor.heading",
+    "PresetsScreen.textColor.heading",
+    "ControlsOptionsScreen.textColor.heading",
+    "LanguageOptionsScreen.textColor.heading",
+    "ResourcePack.textColor.incompatible.heading",
+    "WorldList.textColor.confirm.delete.heading",
+    "WorldList.textColor.confirm.legacyRecreate.heading",
+    "WorldList.textColor.confirm.open.futureWorld.heading",
+    "ServerList.textColor.confirm.delete.heading",
+    "MultiplayerScreen.textColor.heading",
+    "AddServerScreen.textColor.heading",
+    "CustomizeBuffetLevelScreen.textColor.heading",
+    "CustomizeFlatLevelScreen.textColor.heading",
+    "BackupPromptScreen.textColor.heading",
+    "DirectConnectScreen.textColor.heading",
+    "GameMenuScreen.textColor.heading",
+    "WorldListWidget.textColor.errorNotice.futureWorld.heading",
+    "WorldListWidget.textColor.errorNotice.recreate.heading",
+    "MultiplayerWarningScreen.textColor.heading"
+  ],
+  "group.textColor.guiMenu.messages": [
+    //Appears very shortly when deleting or re-creating a world or a little longer when downloading a resource-pack
+    "ProgressScreen.textColor.message"
+    "MultiplayerWarningScreen.textColor.message",
+    "WorldListWidget.textColor.errorNotice.futureWorld.message",
+    "WorldListWidget.textColor.errorNotice.recreate.message",
+    "DisconnectedScreen.textColor.reason",
+    "DownloadingTerrainScreen.textColor.message",
+    //The vanilla end texts use text formatting codes and are therefor not affected by this.
+    "CreditsScreen.textColor",
+    "BackupPromptScreen.textColor.description",
+    "LevelLoadingScreen.textColor.progress",
+    "ServerList.textColor.confirm.delete.message",
+    "WorldList.textColor.confirm.legacyRecreate.message",
+    "WorldList.textColor.confirm.open.futureWorld.message",
+    "WorldList.textColor.confirm.delete.message",
+    "ResourcePack.textColor.incompatible.message",
+    "CustomizeFlatLevelScreen.textColor.fields",
+    "ConnectScreen.textColor.message"
+  ],
+  "group.textColor.inGame.tintedBackground.headings": [
+    "OpenToLanScreen.textColor.heading",
+    "Difficulty.textColor.confirm.lock.heading",
+    "ServerResourcePackPrompt.textColor.heading",
+    "DeathScreen.textColor.heading",
+    "DeathScreen.textColor.confirm.heading",
+    "SignEditScreen.textColor.heading",
+    "AbstractCommandBlockScreen.textColor.heading",
+    "StructureBlockScreen.textColor.heading"
+  ],
+  "group.textColor.inGame.tintedBackground.messages": [
+    //unused. If the DeathScreen confirmation dialog had a message this would modify it...
+    "DeathScreen.textColor.confirm.message",
+    "DeathScreen.textColor.description",
+    "DeathScreen.textColor.Score",
+    "OpenToLanScreen.textColor.message",
+    "Difficulty.textColor.confirm.lock.message",
+    "ServerResourcePackPrompt.textColor.message",
+    "ConfirmChatLinkScreen.textColor.body",
+    "ConfirmChatLinkScreen.textColor.link"
+  ],
+  "group.textColor.inGameOrMenu.headings": [
+    "SettingsScreen.textColor.heading",
+    "SkinOptionsScreen.textColor.heading",
+    "SoundOptionsScreen.textColor.heading",
+    "AccessibilityScreen.textColor.heading",
+    "ChatOptionsScreen.textColor.heading"
+  ],
+  "group.textColor.menu.list.tinted.entry.title": [
+    "WorldList.textColor.entry.title",
+    "ResourcePack.textColor.entry.title",
+    "ServerEntry.textColor.name",
+    "ControlsList.textColor.CategoryEntry",
+    "ControlsList.textColor.KeyBindingEntry",
+    "SuperflatLayerItem.textColor.layer",
+    "BuffetBiomeItem.textColor.biome",
+    "SuperflatLayerItem.textColor.preset",
+    "ResourcePack.textColor.list.heading"
+  ],
+  "group.textColor.menu.list.tinted.entry.description": [
+    "ResourcePack.textColor.entry.description",
+    "ServerEntry.textColor.label",
+    "WorldList.textColor.entry.description"
+  ],
+  "group.textColor.inGame.guiWindow.inventory.heading": [
+    "AbstractFurnaceScreen.textColor.inventory.heading",
+    "BrewingStandScreen.textColor.inventory.heading",
+    "CartographyTableScreen.textColor.inventory.heading",
+    "GenericContainerScreen.textColor.inventory.heading",
+    "CraftingTableScreen.textColor.inventory.heading",
+    "EnchantingScreen.textColor.inventory.heading",
+    "Generic3x3ContainerScreen.textColor.inventory.heading",
+    "GrindstoneScreen.textColor.inventory.heading",
+    "HopperScreen.textColor.inventory.heading",
+    "HorseScreen.textColor.inventory.heading",
+    "LoomScreen.textColor.inventory.heading",
+    "MerchantScreen.textColor.inventory.heading",
+    "ShulkerBoxScreen.textColor.inventory.heading",
+    "StonecutterScreen.textColor.inventory.heading"
+  ],
+  "group.textColor.inGame.guiWindow.default": [
+    "AbstractFurnaceScreen.textColor.heading",
+    "BrewingStandScreen.textColor.heading",
+    "CartographyTableScreen.textColor.heading",
+    "GenericContainerScreen.textColor.heading",
+    "CraftingTableScreen.textColor.heading",
+    "CreativeInventoryScreen.textColor.heading",
+    "EnchantingScreen.textColor.heading",
+    "Generic3x3ContainerScreen.textColor.heading",
+    "GrindstoneScreen.textColor.heading",
+    "HopperScreen.textColor.heading",
+    "HorseScreen.textColor.heading",
+    "LoomScreen.textColor.heading",
+    "MerchantScreen.textColor.heading",
+    "ShulkerBoxScreen.textColor.heading",
+    "StonecutterScreen.textColor.heading",
+    "AnvilScreen.textColor.heading",
+    "InventoryScreen.textColor.crafting",
+    "MerchantScreen.textColor.level",
+    "MerchantScreen.textColor.trades"
+  ],
+  "group.textColor.inGame.default.chat": [
+    "CommandSuggestor.textColor.error",
+    "ChatHud.textColor.chat"
+  ],
+  "group.textColor.inGame.stats.downloading.messages": [
+    "StatsScreen.textColor.downloading.title",
+    "StatsScreen.textColor.downloading.progress"
+  ],
+  "group.textColor.inGame.book.default": [
+    "BookEditScreen.textColor.page",
+    "BookEditScreen.textColor.content",
+    "BookEditScreen.textColor.cursor",
+    "BookEditScreen.textColor.heading.title",
+    "BookEditScreen.textColor.sign.playerName",
+    "BookEditScreen.textColor.sign.title",
+    "BookEditScreen.textColor.sign.darkCursor",
+    "BookScreen.textColor.content",
+    "BookScreen.textColor.page"
+  ],
+  "group.textColor.inGame.sign.default": [
+    "SignEditScreen.textColor.cursor",
+    //the contend is only displayed in another color while editing.
+    //You can color sign text with dye in vanilla and interfering with that is out of scope for this mod.
+    "SignEditScreen.textColor.content"
+  ],
+  "group.textColor.guiMenu.checkBox": [
+    "BackupPromptScreen.textColor.checkbox",
+    "MultiplayerWarningScreen.textColor.checkbox"
+  ],
+  "group.textColor.demoScreen.dark": [
+    "DemoScreen.textColor.description",
+    "DemoScreen.textColor.heading"
+  ],
+  "group.textColor.guiMenu.server.tinted.darkGrey": [
+    "ServerEntry.textColor.unknownStatus",
+    "ServerEntry.textColor.playerCountSeparator"
+  ],
+  "group.textColor.debugScreen": [
+    "DebugHud.textColor.left",
+    "DebugHud.textColor.right"
+  ],
+  "group.textColor.tooltip.white": [
+    "Tooltip.textColor.generic.white",
+    "Screen.textColor.tooltip",
+    "SpectatorHud.textColor.commandTooltip"
+  ],
+  "group.rarity.white": [
+    "Tooltip.textColor.rarityItem.white",
+    "InGameHud.textColor.Tooltip.rarityItem.white"
+  ],
+  "group.rarity.yellow": [
+    "Tooltip.textColor.rarityItem.yellow",
+    "InGameHud.textColor.Tooltip.rarityItem.yellow"
+  ],
+  "group.rarity.aqua": [
+    "Tooltip.textColor.rarityItem.aqua",
+    "InGameHud.textColor.Tooltip.rarityItem.aqua"
+  ],
+  "group.rarity.light_purple": [
+    "Tooltip.textColor.rarityItem.light_purple",
+    "InGameHud.textColor.Tooltip.rarityItem.light_purple"
+  ]
+}
