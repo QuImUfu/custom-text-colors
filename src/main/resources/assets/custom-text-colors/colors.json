@@ -129,6 +129,16 @@
     "green": 255,
     "blue": 255
   },
+  "Tooltip.textColor.world.incompatible": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.world.notStable": {
+    "red": 255,
+    "green": 170,
+    "blue": 0
+  },
   "Tooltip.textColor.enchanting.normal": {
     "red": 170,
     "green": 170,
