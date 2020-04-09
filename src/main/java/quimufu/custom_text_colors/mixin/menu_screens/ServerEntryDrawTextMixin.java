@@ -1,6 +1,7 @@
 package quimufu.custom_text_colors.mixin.menu_screens;
 
 import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;
 import net.minecraft.client.gui.screen.multiplayer.MultiplayerServerListWidget;
 import net.minecraft.util.Formatting;
 import org.apache.logging.log4j.Level;
@@ -15,6 +16,52 @@ import quimufu.custom_text_colors.TextColorsResourceManager;
 @Mixin(MultiplayerServerListWidget.ServerEntry.class)
 public abstract class ServerEntryDrawTextMixin {
     private final NamespacedTextColorsRegistry tcm = TextColorsResourceManager.getInstance().getNamespacedTextColorsRegistry(CustomTextColors.MOD_NAME);
+
+    @Redirect(method = "render",
+            at = @At(value = "INVOKE",
+                    target = "Lnet/minecraft/client/gui/screen/multiplayer/MultiplayerScreen;setTooltip(Ljava/lang/String;)V",
+                    ordinal = 0))
+    private void drawTooltipSetColor(MultiplayerScreen multiplayerScreen, String text) {
+        if (text == null) {
+            multiplayerScreen.setTooltip(null);
+            return;
+        }
+        String[] sa = text.split("\n");
+        StringBuilder sb = new StringBuilder();
+        for (String s : sa) {
+            if (!(sb.length() == 0))
+                sb.append("\n");
+            int color = tcm.getColor("Tooltip.textColor.server.ping", -1);
+            sb.append("§§");
+            sb.append(color);
+            sb.append("§§");
+            sb.append(s);
+        }
+        multiplayerScreen.setTooltip(sb.toString());
+    }
+
+    @Redirect(method = "render",
+            at = @At(value = "INVOKE",
+                    target = "Lnet/minecraft/client/gui/screen/multiplayer/MultiplayerScreen;setTooltip(Ljava/lang/String;)V",
+                    ordinal = 1))
+    private void drawTooltipSetColor2(MultiplayerScreen multiplayerScreen, String text) {
+        if (text == null) {
+            multiplayerScreen.setTooltip(null);
+            return;
+        }
+        String[] sa = text.split("\n");
+        StringBuilder sb = new StringBuilder();
+        for (String s : sa) {
+            if (!(sb.length() == 0))
+                sb.append("\n");
+            int color = tcm.getColor("Tooltip.textColor.server.playerList", -1);
+            sb.append("§§");
+            sb.append(color);
+            sb.append("§§");
+            sb.append(s);
+        }
+        multiplayerScreen.setTooltip(sb.toString());
+    }
 
     @Redirect(method = "render",
             at = @At(value = "INVOKE",

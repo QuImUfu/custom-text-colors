@@ -139,6 +139,16 @@
     "green": 170,
     "blue": 0
   },
+  "Tooltip.textColor.server.ping": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.server.playerList": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
   "Tooltip.textColor.enchanting.normal": {
     "red": 170,
     "green": 170,
