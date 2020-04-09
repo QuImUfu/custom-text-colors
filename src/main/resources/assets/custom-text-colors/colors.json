@@ -89,12 +89,12 @@
     "green": 31,
     "blue": 31
   },
-  "group.textColor.guiMenu.server.tinted.darkGrey":{
+  "group.textColor.guiMenu.server.tinted.darkGrey": {
     "red": 85,
     "green": 85,
     "blue": 85
   },
-  "group.textColor.debugScreen":{
+  "group.textColor.debugScreen": {
     "red": 224,
     "green": 224,
     "blue": 224
@@ -123,6 +123,31 @@
     "red": 255,
     "green": 85,
     "blue": 255
+  },
+  "Tooltip.textColor.enchanting.continuedClue": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.enchanting.normal": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "Tooltip.textColor.enchanting.cursed": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "tooltip.textcolor.enchanting.negative": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "tooltip.textcolor.enchanting.positive": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
   },
   "Tooltip.textColor.generic.black": {
     "red": 0,

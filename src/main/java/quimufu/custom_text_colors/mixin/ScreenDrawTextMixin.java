@@ -23,7 +23,6 @@ public class ScreenDrawTextMixin {
     private final NamespacedTextColorsRegistry tcm = TextColorsResourceManager.getInstance().getNamespacedTextColorsRegistry(CustomTextColors.MOD_NAME);
     private final Pattern p = Pattern.compile("§§([-0-9]*)§§");
 
-
     @Redirect(method = "renderTooltip(Ljava/util/List;II)V",
             at = @At(value = "INVOKE",
                     target = "Lnet/minecraft/client/font/TextRenderer;draw(Ljava/lang/String;FFIZLnet/minecraft/client/util/math/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;ZII)I"))
@@ -85,9 +84,10 @@ public class ScreenDrawTextMixin {
         screen.renderTooltip(text, x, y);
     }
 
+
     private String reformatOther(String s) {
         String[] formatGroups = s.split("§");
-        StringBuffer s1 = new StringBuffer();
+        StringBuilder s1 = new StringBuilder();
         for (String stf : formatGroups) {
             if (stf.isEmpty()) continue;
             Formatting f = Formatting.byCode(stf.charAt(0));

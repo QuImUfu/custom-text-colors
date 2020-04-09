@@ -135,7 +135,7 @@ public class TextColorsResourceManager implements SimpleSynchronousResourceReloa
                 log(Level.ERROR, j.toJson() + " is not a Number");
                 continue;
             }
-            colorGroup.put(entry.getKey(), ((JsonPrimitive) j).asString());
+            colorGroup.put(normalize(entry.getKey()), normalize(((JsonPrimitive) j).asString()));
         }
     }
 
@@ -153,7 +153,7 @@ public class TextColorsResourceManager implements SimpleSynchronousResourceReloa
                     log(Level.ERROR, "The entry is not a JsonObject");
                     continue;
                 }
-                if (colorGroupRegistries.get(namespace).containsKey(entry.getKey())) {
+                if (colorGroupRegistries.get(namespace).containsKey(normalize(entry.getKey()))) {
                     retrieveColorGroupValues(entry, colors, colorGroupRegistries.get(namespace));
                 } else if (entry.getKey().contains("ChangingColor")) {
                     retrieveColorChanging(entry, changingColors);
@@ -201,7 +201,7 @@ public class TextColorsResourceManager implements SimpleSynchronousResourceReloa
 
             }
         }
-        for (String value : groups.get(entry.getKey())) {
+        for (String value : groups.get(normalize(entry.getKey()))) {
             if (colors.containsKey(value)) {
                 continue;
             }
