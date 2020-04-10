@@ -59,7 +59,7 @@ public class NamespacedTextColorsRegistry {
 
 
     public int getColor(String s, int color) {
-        s = normalize(s);
+        String keyString = normalize(s);
         if (conf.eyesoreRandom) {
             return ((random.nextInt() | random.nextInt()) & 0xFFFFFF) | (color & 0xFF000000);
         }
@@ -81,17 +81,17 @@ public class NamespacedTextColorsRegistry {
                 nextPRColors = tmp;
                 nextPRColors.clear();
             }
-            if (!currentPRColors.containsKey(s)) {
-                currentPRColors.put(s, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
+            if (!currentPRColors.containsKey(keyString)) {
+                currentPRColors.put(keyString, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
             }
-            if (!nextPRColors.containsKey(s)) {
-                nextPRColors.put(s, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
+            if (!nextPRColors.containsKey(keyString)) {
+                nextPRColors.put(keyString, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
             }
-            return mix(currentPRColors.get(s), nextPRColors.get(s), ((float) timeDelta) / ((float) conf.pulseSpeedMs)) | (color & 0xFF000000);
+            return mix(currentPRColors.get(keyString), nextPRColors.get(keyString), ((float) timeDelta) / ((float) conf.pulseSpeedMs)) | (color & 0xFF000000);
 
         }
-        if (colors.get(s) == null) {
-            CustomTextColors.log(Level.ERROR, "unset color: " + s);
+        if (colors.get(keyString) == null) {
+            CustomTextColors.log(Level.ERROR, "unset color: " + keyString);
             CustomTextColors.log(Level.ERROR, "default is:");
             JsonObject colorO = new JsonObject();
             colorO.put("red", new JsonPrimitive((0b11111111 & (color >> 16))));
@@ -110,10 +110,10 @@ public class NamespacedTextColorsRegistry {
             } else {
                 CustomTextColors.log(Level.ERROR, "Using Default");
             }
-            colors.put(s, 0xFFFFFF & color1);
+            colors.put(keyString, 0xFFFFFF & color1);
 
         }
-        return colors.get(s) | (color & 0xFF000000);
+        return colors.get(keyString) | (color & 0xFF000000);
     }
 
     private int mix(int c1, int c2, float ratio) {
