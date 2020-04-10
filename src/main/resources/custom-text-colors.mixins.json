@@ -32,6 +32,7 @@
     "gui_window.LoomScreenDrawTextMixin",
     "gui_window.MerchantScreenDrawTextMixin",
     "gui_window.RecipeBookResultsDrawTextMixin",
+    "gui_window.RecipeBookWidgetDrawTextMixin",
     "gui_window.ShulkerBoxScreenDrawTextMixin",
     "gui_window.SignEditScreenDrawTextMixin",
     "gui_window.StonecutterScreenDrawTextMixin",

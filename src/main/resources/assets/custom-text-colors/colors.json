@@ -149,6 +149,16 @@
     "green": 255,
     "blue": 255
   },
+  "Tooltip.textColor.craftable": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.morerecipes": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
   "Tooltip.textColor.enchanting.normal": {
     "red": 170,
     "green": 170,

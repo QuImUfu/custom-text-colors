@@ -1,17 +1,9 @@
 package quimufu.custom_text_colors.mixin.gui_window;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.recipebook.AnimatedResultButton;
-import net.minecraft.client.gui.screen.recipebook.RecipeBookResults;
-import net.minecraft.client.gui.screen.recipebook.RecipeResultCollection;
-import net.minecraft.container.CraftingContainer;
-import net.minecraft.recipe.book.RecipeBook;
+import net.minecraft.client.gui.screen.recipebook.RecipeBookWidget;
 import net.minecraft.util.Formatting;
-import org.apache.logging.log4j.Level;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import quimufu.custom_text_colors.CustomTextColors;
@@ -19,52 +11,24 @@ import quimufu.custom_text_colors.NamespacedTextColorsRegistry;
 import quimufu.custom_text_colors.TextColorsResourceManager;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 
-@Mixin(RecipeBookResults.class)
-public abstract class RecipeBookResultsDrawTextMixin {
+@Mixin(RecipeBookWidget.class)
+public class RecipeBookWidgetDrawTextMixin {
     private final NamespacedTextColorsRegistry tcm = TextColorsResourceManager.getInstance().getNamespacedTextColorsRegistry(CustomTextColors.MOD_NAME);
-    @Shadow
-    private RecipeBook recipeBook;
-    @Shadow
-    private AnimatedResultButton hoveredResultButton;
+    private final Pattern p = Pattern.compile("§§([-0-9]*)§§");
 
-    @Shadow
-    public abstract MinecraftClient getMinecraftClient();
 
-    @Shadow
-    private RecipeResultCollection resultCollection;
-
-    @Redirect(method = "draw",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/client/font/TextRenderer;draw(Ljava/lang/String;FFI)I"))
-    private int drawTextChangeColor(TextRenderer textRenderer, String text, float x, float y, int color) {
-        if (color == -1) {
-            return textRenderer.draw(text, x, y, tcm.getColor("RecipeBookResults.textColor.page", color));
-        } else {
-            CustomTextColors.log(Level.ERROR, "unknown value: " + color);
-            CustomTextColors.log(Level.ERROR, "falling back to default. " + this.getClass().getSimpleName() + " !report this to CustomTextColors!");
-        }
-        return textRenderer.draw(text, x, y, color);
-    }
-
-    @Redirect(method = "drawTooltip",
+    @Redirect(method = "drawGhostSlotTooltip",
             at = @At(value = "INVOKE",
                     target = "Lnet/minecraft/client/gui/screen/Screen;renderTooltip(Ljava/util/List;II)V"))
     private void drawTextItemTooltipChangeColor(Screen screen, List<String> text, int x, int y) {
         //item tooltip
-        if (text == null) {
-            screen.renderTooltip(text, x, y);
-            return;
-        }
-
-        boolean bl = hoveredResultButton.getResultCollection().getResults(recipeBook.isFilteringCraftable((CraftingContainer) getMinecraftClient().player.container)).size() > 1;
         for (int i = 0; i < text.size(); i++) {
             String s = text.get(i);
             if (i == 0) {
                 text.set(i, reformatTitle(s));
-            } else if (i == text.size() - 1 && bl) {
-                text.set(i, reformatMoreRecipies(s));
             } else {
                 text.set(i, reformatOther(s));
             }
@@ -72,11 +36,19 @@ public abstract class RecipeBookResultsDrawTextMixin {
         screen.renderTooltip(text, x, y);
     }
 
-    private String reformatMoreRecipies(String s) {
-        int color = tcm.getColor("Tooltip.textColor.moreRecipes", -1);
-        return "§§" + color + "§§" + s;
+    @Redirect(method = "drawTooltip",
+            at = @At(value = "INVOKE",
+                    target = "Lnet/minecraft/client/gui/screen/Screen;renderTooltip(Ljava/lang/String;II)V"))
+    private void drawTextButtonTooltipChangeColor(Screen screen, String text, int x, int y) {
+        //Toggle view craftable tooltip
+        text = reformatButton(text);
+        screen.renderTooltip(text, x, y);
     }
 
+    private String reformatButton(String text) {
+        int color = tcm.getColor("Tooltip.textColor.craftable", -1);
+        return "§§" + color + "§§" + text;
+    }
 
     private String reformatOther(String s) {
         String[] formatGroups = s.split("§");
@@ -93,7 +65,9 @@ public abstract class RecipeBookResultsDrawTextMixin {
             } else {
                 s1.append("§");
                 s1.append(stf);
+
             }
+
         }
         return s1.toString();
     }
@@ -104,5 +78,6 @@ public abstract class RecipeBookResultsDrawTextMixin {
         int color = tcm.getColor("Tooltip.textColor.rarityItem." + f.getName(), f.getColorValue());
         return "§§" + color + "§§" + s.substring(2);
     }
+
 }
 
