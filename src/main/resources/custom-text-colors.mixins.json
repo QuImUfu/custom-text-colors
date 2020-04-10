@@ -36,6 +36,7 @@
     "gui_window.RecipeBookWidgetDrawTextMixin",
     "gui_window.ShulkerBoxScreenDrawTextMixin",
     "gui_window.SignEditScreenDrawTextMixin",
+    "gui_window.ItemRendererDrawTextMixin",
     "gui_window.StonecutterScreenDrawTextMixin",
     "hud.AdvancementToastDrawTextMixin",
     "hud.BossBarHudDrawTextMixin",

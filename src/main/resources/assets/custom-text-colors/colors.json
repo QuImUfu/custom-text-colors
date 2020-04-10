@@ -259,6 +259,11 @@
     "green": 255,
     "blue": 85
   },
+  "ItemStack.textColor.amount": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
   "TutorialToast.textColor.title": {
     "red": 80,
     "green": 0,
