@@ -154,7 +154,12 @@
     "green": 255,
     "blue": 255
   },
-  "Tooltip.textColor.morerecipes": {
+  "Tooltip.textColor.moreRecipes": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.beacon": {
     "red": 255,
     "green": 255,
     "blue": 255

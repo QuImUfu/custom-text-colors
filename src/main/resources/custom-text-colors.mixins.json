@@ -16,6 +16,7 @@
     "gui_window.AbstractFurnaceScreenDrawTextMixin",
     "gui_window.AnvilScreenDrawTextMixin",
     "gui_window.BeaconScreenDrawTextMixin",
+    "gui_window.BeaconTooltipsDrawTextMixin",
     "gui_window.BookEditScreenDrawTextMixin",
     "gui_window.BookScreenDrawTextMixin",
     "gui_window.BrewingStandScreenDrawTextMixin",
