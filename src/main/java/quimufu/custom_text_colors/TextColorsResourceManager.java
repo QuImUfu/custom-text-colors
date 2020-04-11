@@ -155,7 +155,7 @@ public class TextColorsResourceManager implements SimpleSynchronousResourceReloa
                 }
                 if (colorGroupRegistries.get(namespace).containsKey(normalize(entry.getKey()))) {
                     retrieveColorGroupValues(entry, colors, colorGroupRegistries.get(namespace));
-                } else if (entry.getKey().contains("ChangingColor")) {
+                } else if (normalize(entry.getKey()).contains("changingcolor")) {
                     retrieveColorChanging(entry, changingColors);
                 } else {
                     retrieveColorValue(entry, colors);

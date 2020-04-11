@@ -259,11 +259,6 @@
     "green": 255,
     "blue": 85
   },
-  "ItemStack.textColor.amount": {
-    "red": 255,
-    "green": 255,
-    "blue": 255
-  },
   "TutorialToast.textColor.title": {
     "red": 80,
     "green": 0,
@@ -516,6 +511,16 @@
     "red": 170,
     "green": 170,
     "blue": 170
+  },
+  "ItemStack.ChangingColor.amount": {
+    "colorType": "rgb",
+    "colors": [
+      {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      }
+    ]
   },
   //this is only used for records
   "InGameHud.textColor.ChangingColor": {
