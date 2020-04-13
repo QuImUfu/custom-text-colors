@@ -2,6 +2,7 @@ package quimufu.custom_text_colors;
 
 
 import com.google.common.collect.Maps;
+import com.google.common.collect.Multimap;
 import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
 import net.minecraft.util.Util;
 import org.apache.logging.log4j.Level;
@@ -28,6 +29,8 @@ public class NamespacedTextColorsRegistry {
     private Map<String, Integer> currentPRColors = Maps.newHashMap();
     private Map<String, Integer> nextPRColors = Maps.newHashMap();
     private long time = -1;
+    private boolean preparedFixedRandom = false;
+    protected Map<String, Integer> colorsSave;
 
     public NamespacedTextColorsRegistry(String ns, Map<String, Integer> cm, Map<String, ChangingColor> ccm, Default aDefault) {
         namespace = ns;
@@ -61,7 +64,7 @@ public class NamespacedTextColorsRegistry {
     public int getColor(String s, int color) {
         String keyString = normalize(s);
         if (conf.eyesoreRandom) {
-            return ((random.nextInt() | random.nextInt()) & 0xFFFFFF) | (color & 0xFF000000);
+            return getRandomColor() | (color & 0xFF000000);
         }
         if (conf.pulsatingRandom) {
             long now = Util.getMeasuringTimeMs();
@@ -82,13 +85,17 @@ public class NamespacedTextColorsRegistry {
                 nextPRColors.clear();
             }
             if (!currentPRColors.containsKey(keyString)) {
-                currentPRColors.put(keyString, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
+                currentPRColors.put(keyString, getRandomColor());
             }
             if (!nextPRColors.containsKey(keyString)) {
-                nextPRColors.put(keyString, ((random.nextInt() | random.nextInt()) & 0xFFFFFF));
+                nextPRColors.put(keyString, (getRandomColor()));
             }
             return mix(currentPRColors.get(keyString), nextPRColors.get(keyString), ((float) timeDelta) / ((float) conf.pulseSpeedMs)) | (color & 0xFF000000);
-
+        }
+        if (conf.groupedRandom && !preparedFixedRandom) {
+            prepaireFixedRandom();
+        } else if (!conf.groupedRandom && preparedFixedRandom) {
+            reverseFixedRandom();
         }
         if (colors.get(keyString) == null) {
             CustomTextColors.log(Level.ERROR, "unset color: " + keyString);
@@ -99,7 +106,7 @@ public class NamespacedTextColorsRegistry {
             colorO.put("blue", new JsonPrimitive((0b11111111 & color)));
             CustomTextColors.log(Level.ERROR, "\n\"" + s + "\": " + colorO.toJson(JsonGrammar.JANKSON));
             int color1 = color;
-            if (conf.randomMissingColors) {
+            if (conf.randomMissingColors || conf.groupedRandom) {
                 color1 = random.nextInt() | random.nextInt();
                 CustomTextColors.log(Level.ERROR, "Using Random Color:");
                 colorO = new JsonObject();
@@ -114,6 +121,31 @@ public class NamespacedTextColorsRegistry {
 
         }
         return colors.get(keyString) | (color & 0xFF000000);
+    }
+
+    private int getRandomColor() {
+        return (random.nextInt() | random.nextInt()) & 0xFFFFFF;
+    }
+
+    private void reverseFixedRandom() {
+        colors = colorsSave;
+        preparedFixedRandom = false;
+    }
+
+    private void prepaireFixedRandom() {
+        colorsSave = colors;
+        colors = Maps.newHashMap();
+        Multimap<String, String> cgr = TextColorsResourceManager.getInstance().getColorGroupRegistry(this);
+        for (String group : cgr.keys()) {
+            int color = getRandomColor();
+            for (String entry : cgr.get(group)) {
+                colors.put(entry, color);
+            }
+        }
+        for (String entry : colorsSave.keySet()) {
+            colors.putIfAbsent(entry, getRandomColor());
+        }
+        preparedFixedRandom = true;
     }
 
     private int mix(int c1, int c2, float ratio) {

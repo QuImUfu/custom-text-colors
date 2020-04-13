@@ -3,5 +3,6 @@
   "text.autoconfig.custom-text-colors.option.randomMissingColors": "Random colors for missing entries:",
   "text.autoconfig.custom-text-colors.option.eyesoreRandom": "Rapidly changing, random colors for everything:",
   "text.autoconfig.custom-text-colors.option.pulseSpeedMs": "Duration of each pulse in Ms:",
-  "text.autoconfig.custom-text-colors.option.pulsatingRandom": "Random, transitioning colors \n for each configurable text group:"
+  "text.autoconfig.custom-text-colors.option.pulsatingRandom": "Random, transitioning colors for each configurable text group:",
+  "text.autoconfig.custom-text-colors.option.groupedRandom": "Use randomly generated, Fixed colors for current color groups then colors"
 }

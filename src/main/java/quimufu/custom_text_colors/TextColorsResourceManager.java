@@ -29,6 +29,11 @@ public class TextColorsResourceManager implements SimpleSynchronousResourceReloa
     protected final Map<String, Map<String, ChangingColor>> changingColorRegistries = Maps.newHashMap();
     protected final Map<String, NamespacedTextColorsRegistry> namespacedRegistries = Maps.newHashMap();
     protected final Map<String, Default> defaults = Maps.newHashMap();
+
+    public Multimap<String, String> getColorGroupRegistry(NamespacedTextColorsRegistry n) {
+        return colorGroupRegistries.get(n.namespace);
+    }
+
     protected final Map<String, Multimap<String, String>> colorGroupRegistries = Maps.newHashMap();
 
     private TextColorsResourceManager() {

@@ -12,4 +12,5 @@ class CustomTextColorsConfig implements ConfigData {
     int pulseSpeedMs = 500;
     boolean randomMissingColors = false;
     boolean eyesoreRandom = false;
+    boolean groupedRandom = false;
 }
