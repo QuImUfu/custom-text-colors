@@ -1,6 +1,143 @@
 {
-  "group.textColor.guiIngame": {
-    "red": 85,
+  //untested due to ???how??? ->
+  "FatalErrorScreen.textColor.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "FatalErrorScreen.textColor.message": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "OutOfMemoryScreen.textColor.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "OutOfMemoryScreen.textColor.fields": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "WorldList.textColor.confirm.recreate.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  // <- untested due to ???how???
+  "PlayerListHud.textColor.header": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "PlayerListHud.textColor.footer": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "PlayerListHud.textColor.score": {
+    "red": 255,
+    "green": 255,
+    "blue": 85
+  },
+  "InGameHud.textColor.title": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "EntityStatsList.textColor.entity": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "EntityStatsList.textColor.kills": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  "EntityStatsList.textColor.killsZero": {
+    "red": 96,
+    "green": 96,
+    "blue": 96
+  },
+  "ItemStatsList.textColor.itemLight": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "ItemStatsList.textColor.itemDark": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  "ItemStatsList.textColor.tooltip": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "GeneralStatsList.textColor.itemLight": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "GeneralStatsList.textColor.itemDark": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  "Tooltip.textColor.enchanting.normal": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "Tooltip.textColor.enchanting.cursed": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.enchanting.negative": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.enchanting.positive": {
+    "red": 170,
+    "green": 170,
+    "blue": 170
+  },
+  "Tooltip.textColor.world.incompatible": {
+    "red": 255,
+    "green": 85,
+    "blue": 85
+  },
+  "Tooltip.textColor.world.notStable": {
+    "red": 255,
+    "green": 170,
+    "blue": 0
+  },
+  "Tooltip.textColor.server.ping": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.server.playerList": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.craftable": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.moreRecipes": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "Tooltip.textColor.beacon": {
+    "red": 255,
     "green": 255,
     "blue": 255
   },
@@ -174,6 +311,11 @@
     "green": 255,
     "blue": 255
   },
+  "AbstractButtonWidget.textColor.textField": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
   "AbstractButtonWidget.textColor.active": {
     "red": 255,
     "green": 255,
@@ -285,6 +427,11 @@
     "blue": 255
   },
   "SettingsScreen.textColor.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "MouseOptionsScreen.textColor.heading": {
     "red": 255,
     "green": 255,
     "blue": 255
@@ -485,7 +632,7 @@
     "green": 255,
     "blue": 255
   },
-  "AnvilScreen.textColor.header": {
+  "AnvilScreen.textColor.heading": {
     "red": 64,
     "green": 64,
     "blue": 64

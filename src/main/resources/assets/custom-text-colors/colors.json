@@ -124,6 +124,73 @@
     "green": 85,
     "blue": 255
   },
+  "EntityStatsList.textColor.entity": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "EntityStatsList.textColor.kills": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  "EntityStatsList.textColor.killsZero": {
+    "red": 96,
+    "green": 96,
+    "blue": 96
+  },
+  "ItemStatsList.textColor.itemLight": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "ItemStatsList.textColor.itemDark": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  "ItemStatsList.textColor.tooltip": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "GeneralStatsList.textColor.itemLight": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "GeneralStatsList.textColor.itemDark": {
+    "red": 144,
+    "green": 144,
+    "blue": 144
+  },
+  //untested due to ???how??? ->
+  "FatalErrorScreen.textColor.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "FatalErrorScreen.textColor.message": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "OutOfMemoryScreen.textColor.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "OutOfMemoryScreen.textColor.fields": {
+    "red": 160,
+    "green": 160,
+    "blue": 160
+  },
+  "WorldList.textColor.confirm.recreate.heading": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  // <- untested due to ???how???
   "Tooltip.textColor.enchanting.continuedClue": {
     "red": 255,
     "green": 255,
@@ -364,6 +431,26 @@
     "green": 255,
     "blue": 255
   },
+  "PlayerListHud.textColor.spectator": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "PlayerListHud.textColor.header": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "PlayerListHud.textColor.footer": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
+  "PlayerListHud.textColor.score": {
+    "red": 255,
+    "green": 255,
+    "blue": 85
+  },
   "InGameHud.textColor.exp": {
     "red": 128,
     "green": 255,
@@ -373,11 +460,6 @@
     "red": 0,
     "green": 0,
     "blue": 0
-  },
-  "PlayerListHud.textColor.spectator": {
-    "red": 255,
-    "green": 255,
-    "blue": 255
   },
   "SpectatorHud.textColor.iconHotkey": {
     "red": 255,
