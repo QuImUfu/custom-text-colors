@@ -1,5 +1,17 @@
 {
+  "group.textColor.StatsList.light": [
+    "ItemStatsList.textColor.itemLight",
+    "GeneralStatsList.textColor.itemLight",
+    "EntityStatsList.textColor.entity"
+  ],
+  "group.textColor.StatsList.dark": [
+    "GeneralStatsList.textColor.itemDark",
+    "ItemStatsList.textColor.itemDark",
+    "EntityStatsList.textColor.kills"
+  ],
   "group.textColor.guiMenu.fields": [
+    //untested due to ???how???
+    "OutOfMemoryScreen.textColor.fields",
     "EditWorldScreen.textColor.field",
     "CreateWorldScreen.textColor.fields",
     "PresetsScreen.textColor.share",
@@ -20,6 +32,11 @@
     "AbstractCommandBlockScreen.textColor.fields"
   ],
   "group.textColor.guiMenu.headings": [
+    //untested due to ???how??? ->
+    "FatalErrorScreen.textColor.heading",
+    "OutOfMemoryScreen.textColor.heading",
+    "WorldList.textColor.confirm.recreate.heading",
+    // <- untested due to ???how???
     "AddServerScreen.textColor.heading",
     "BackupPromptScreen.textColor.heading",
     "ControlsOptionsScreen.textColor.heading",
@@ -44,12 +61,13 @@
     "StatsScreen.textColor.heading",
     "VideoOptionsScreen.textColor.heading",
     "WorldList.textColor.confirm.delete.heading",
-    "WorldList.textColor.confirm.legacyRecreate.heading",
     "WorldList.textColor.confirm.open.futureWorld.heading",
     "WorldListWidget.textColor.errorNotice.futureWorld.heading",
     "WorldListWidget.textColor.errorNotice.recreate.heading"
   ],
   "group.textColor.guiMenu.messages": [
+    //untested due to ???how???
+    "FatalErrorScreen.textColor.message",
     //Appears very shortly when deleting or re-creating a world or a little longer when downloading a resource-pack
     "ProgressScreen.textColor.message",
     "MultiplayerWarningScreen.textColor.message",

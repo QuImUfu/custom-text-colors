@@ -86,6 +86,11 @@
     "green": 144,
     "blue": 144
   },
+  "Tooltip.textColor.enchanting.continuedClue": {
+    "red": 255,
+    "green": 255,
+    "blue": 255
+  },
   "Tooltip.textColor.enchanting.normal": {
     "red": 170,
     "green": 170,
@@ -578,11 +583,6 @@
     "blue": 255
   },
   "WorldList.textColor.confirm.delete.message": {
-    "red": 255,
-    "green": 255,
-    "blue": 255
-  },
-  "WorldList.textColor.confirm.legacyRecreate.heading": {
     "red": 255,
     "green": 255,
     "blue": 255
