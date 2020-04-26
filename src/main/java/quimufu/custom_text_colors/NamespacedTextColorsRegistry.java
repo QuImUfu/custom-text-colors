@@ -160,7 +160,11 @@ public class NamespacedTextColorsRegistry {
     }
 
     public void reset(Map<String, Integer> cm, Map<String, ChangingColor> ccm, Default aDefault) {
-        colors = cm;
+        if (preparedFixedRandom) {
+            colorsSave = cm;
+        } else {
+            colors = cm;
+        }
         changingColors = ccm;
         defaults = aDefault;
     }
